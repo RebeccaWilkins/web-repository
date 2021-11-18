@@ -41,61 +41,38 @@ body, html {
     - Source of Image: I, the author Aida, created the logo. 
     -------------------------- -->
 
-    <!-- home (logo link), about, services, projects gallery, locations, team, resources -->
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
-    </div>
-    <!--** End Owner: Aida Tuhcic ***-->
+<!-- home (logo link), about, services, projects gallery, locations, team, resources -->
+<div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
+</div>
+<!--** End Owner: Aida Tuhcic ***-->
 
-    <!-- Nav bar links and icons by Rebecca Wilkins-->
-    <!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-    <!-- Right-sided navbar links -->
-    <!-- <div class="w3-right w3-hide-small">
-      <div class="dropdown">
-        <button class="dropbtn"><i class="fa fa-building-o"></i> OUR COMPANY<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-          <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT US</a>
-          <a href="testimonials.html" class="w3-bar-item w3-button"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a>
-          <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> STAFF</a>
-        </div>
-        <button class="dropbtn"><i class="fa fa-briefcase"></i> OUR WORK<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-          <a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
-          <a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-image"></i></i> GALLERY</a>
-        </div>
-      </div>
-      <a href="locations.html" class="w3-bar-item w3-button"><i class="fa fa-map-marker"></i></i> LOCATIONS</a>      
-      <a href="resources.html" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RESOURCES</a>
-    </div> -->
+<!-- Nav bar links and icons by Rebecca Wilkins-->
+<!-- dropdown menu code from https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+<!-- Right-sided navbar links -->
+<div class="w3-right w3-hide-small navbar">
+    <!-- <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
+    </div> --> <!-- does this go here or up outside navbar?-->
+    <div class="dropdown1">
+        <button class="dropbtn1"><i class="fa fa-building-o"></i> OUR COMPANY<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content1">
+        <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT US</a>
+        <a href="testimonials.html" class="w3-bar-item w3-button"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a>
+        <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> STAFF</a>
+        </div> <!-- end div.dropdown-content1-->
+    </div> <!-- end div.dropdown1-->
+    <div class="dropdown2">
+        <button class="dropbtn2"><i class="fa fa-briefcase"></i> OUR WORK<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content2">
+        <a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+        <a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-image"></i></i> GALLERY</a>
+        </div> <!-- end div.dropdown-content2-->
+    </div> <!-- end div.dropdown2-->
+</div> <!-- end div.navbar-->
 
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-
-    <ul id="navigation" class="nav-main">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="logo"></a> 
-        </div>
-        <li class="list"><i class="fa fa-building-o"></i> OUR COMPANY<i class="fa fa-caret-down"></i>
-        <ul class="nav-sub">
-            <li><a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i> ABOUT US</a></li>
-            <li><a href="testimonials.html" class="w3-bar-item w3-button"><i class="fa fa-commenting-o"></i> TESTIMONIALS</a></li>
-            <li><a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> STAFF</a></li>
-        </ul>
-        </li>
-        
-        <li class="list"><i class="fa fa-briefcase"></i> OUR WORK<i class="fa fa-caret-down"></i>
-        <ul class="nav-sub">
-            <li><a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a></li>
-             <li><a href="projects.html" class="w3-bar-item w3-button"><i class="fa fa-image"></i></i> GALLERY</a></li>
-        </ul>
-        </li>
-        
-        <li><a href="locations.html" class="w3-bar-item w3-button"><i class="fa fa-map-marker"></i></i> LOCATIONS</a></li>
-        <li><a href="resources.html" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RESOURCES</a></li>
-        
-    
-    </ul>
-        
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
@@ -118,7 +95,7 @@ body, html {
 
 <!-- Header with full-height hero image by Sunayana -->
 <!-- inspiration from w3schools https://www.w3schools.com/html/html_images.asp> -->
-<header><img src="images/heroimage.jpg" alt="Hero Image of a misty but very green temperate forest">
+<header id="home"><img src="images/heroimage.jpg" alt="Hero Image of a misty but very green temperate forest">
 <!-- ----------------------
     - Owner: Aida Tuhcic 
     - Date: November 15th 
