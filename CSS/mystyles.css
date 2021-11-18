@@ -214,14 +214,6 @@ footer { /*footer by Terrie-Ann 15/11/2021*/
   }
   
 
-  #navigation {
-	margin:0;
-	padding: 0;
-	clear:both;
-	width:950px;
-	height:51px;
-	background: #d6eaf8 url(images/dropdown-bg.gif) repeat-x left top;
-}
 
 
 ul.nav-main, ul.nav-main li {
