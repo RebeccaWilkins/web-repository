@@ -207,6 +207,7 @@ footer { /*footer by Terrie-Ann 15/11/2021*/
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content1 a:hover, .dropdown-content2 a:hover {
     background-color: #ddd;
+    display: block;
   }
   
   /* Show the dropdown menu on hover */
