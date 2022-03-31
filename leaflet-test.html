@@ -3,6 +3,8 @@
 <!-- Access this page at https://rebeccawilkins.github.io/web-repository/leaflet-test.html -->
 <!-- Using modified code from https://leafletjs.com/SlavaUkraini/examples/quick-start/example.html to learn about Leaflet capability -->
 
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	
@@ -12,9 +14,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-<!-- Leaflet CSS file -->
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
-<!-- Leaflet JS file -->    
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
 	<style>
@@ -28,10 +29,6 @@
 			max-width: 100%;
 			max-height: 100%;
 		}
-		/* #map {
-			width: 80%;
-			height: 40%;
-		} */
 	</style>
 
 	
@@ -54,30 +51,26 @@
 		zoomOffset: -1
 	}).addTo(map);
 
-	var marker = L.marker([45.4215, 75.6972]).addTo(map)
-		.bindPopup('<b>Middle of Ottawa</b>').openPopup();
+	var marker = L.marker([51.5, -0.09]).addTo(map)
+		.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
 
 	var circle = L.circle([51.508, -0.11], {
 		color: 'blue',
 		fillColor: 'blue',
-		fillOpacity: 0.7,
+		fillOpacity: 0.5,
 		radius: 500
-	}).addTo(map).bindPopup('This is a blue circle.');
+	}).addTo(map).bindPopup('I am a circle.');
 
 	var polygon = L.polygon([
 		[51.509, -0.08],
 		[51.503, -0.06],
-		[51.51, -0.047]], 
-    				{
-		color: 'red'
-		fillColor: 'red',
-		fillOpacity: 0.1,
-     }).addTo(map).bindPopup('This is a red polygon.');
+		[51.51, -0.047]
+	]).addTo(map).bindPopup('I am a polygon.');
 
 
 	var popup = L.popup()
-		.setLatLng([45.424253, -75.683677])
-		.setContent('University of Ottawa campus.')
+		.setLatLng([51.513, -0.09])
+		.setContent('I am a standalone popup.')
 		.openOn(map);
 
 	function onMapClick(e) {
