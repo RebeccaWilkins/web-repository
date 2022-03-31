@@ -51,26 +51,30 @@
 		zoomOffset: -1
 	}).addTo(map);
 
-	var marker = L.marker([45.424253, -75.683677]).addTo(map)
-		.bindPopup('<b>uOttawa campus!</b><br />I am a popup.').openPopup();
+	var marker = L.marker([45.417361, -75.691167]).addTo(map)
+		.bindPopup('<b>Somerset Manor</b><br />Previous residence').openPopup();
 
-	var circle = L.circle([51.508, -0.11], {
+	var circle = L.circle([45.414821, -75.695017], {
 		color: 'blue',
 		fillColor: 'blue',
 		fillOpacity: 0.5,
 		radius: 500
-	}).addTo(map).bindPopup('I am a circle.');
+	}).addTo(map).bindPopup('Downtown stomping grounds');
 
 	var polygon = L.polygon([
-		[51.509, -0.08],
-		[51.503, -0.06],
-		[51.51, -0.047]],
-				{
+		[45.423109, -75.687084],
+		[45.425427, -75.687397],
+		[45.425973, -75.686062],
+		[45.424442, -75.684696],
+		[45.425229, -75.682944],
+		[45.419025, -75.677914],
+		[45.418784, -75.678258]],
+		{
 		color: 'red',
 		fillColor: 'red',
 		fillOpacity: 0.7
 		}
-	).addTo(map).bindPopup('I am a polygon.');
+	).addTo(map).bindPopup('uOttawa campus');
 
 
 	var popup = L.popup()
@@ -81,7 +85,7 @@
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
-			.setContent('You clicked the map at ' + e.latlng.toString())
+			.setContent('This is ' + e.latlng.toString())
 			.openOn(map);
 	}
 
